@@ -26,3 +26,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/d2-common/overlay-cdma
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/d2usc/d2usc-vendor.mk)
+
+PRODUCT_COPY_FILES += \
+	device/samsung/d2usc/kernel:kernel
